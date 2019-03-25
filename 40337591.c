@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <conio.h>
 
+
+//save the square into the board
 char square[10] = { 'o', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
 int checkwin();
@@ -125,7 +127,7 @@ int TacGame(int Game)
 }
 
 
-
+//main part for the Tic tac toe.
 int main(void)
 {
     int menu;
@@ -167,7 +169,7 @@ int main(void)
 }
 
 
-
+//Check the square in the board if the square have been mark
 int checkwin()
 {
     if (square[1] == square[2] && square[2] == square[3])
